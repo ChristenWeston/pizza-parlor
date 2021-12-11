@@ -42,6 +42,17 @@ $(document).ready(function() {
     event.preventDefault();
     $(".pizza").show();
     $("#start-order").hide();
+  })
+})
+
+$(document).ready(function() {
+  $("form#pizza-form").submit(function(event) {
+    event.preventDefault();
+    $(".pizza").hide();
+    $(".order").show();
 
   })
 })
+
+
+

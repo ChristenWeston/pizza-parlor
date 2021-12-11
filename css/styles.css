@@ -49,6 +49,21 @@ body {
   border-radius: 0.25rem;
   margin: 4px;
   padding: 2px;
-  border: 2px solid rgba(0, 0, 0, 0.125);
+  border: 2px solid rgba(238, 225, 225, 0.125);
   height: 450px;
   }
+
+  .order{
+    display: none;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border-radius: 0.25rem;
+    margin: 4px;
+    padding: 2px;
+    border: 2px solid rgba(238, 225, 225, 0.125);
+    height: 450px;
+    }
