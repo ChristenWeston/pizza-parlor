@@ -2,11 +2,11 @@ Describe: Pizza()
 
 Test: "It should return a Pizza object with two properties for toppings and size"
 Code: const myPizza = new Pizza(["broccoli", "garlic"], "vegan cheese", "tomato", "medium");
-Expected Output: Pizza { toppings: ["broccoli", "garlic"], cheese: "vegan cheese", sauce: "tomato", size: "medium" }
+Expected Output: Pizza { toppings: ["broccoli", "garlic"], cheese: "vegan cheese", sauce: "tomato", size: "medium", cost: "12.5"}
 
 Test: "It should return a Pizza object with two properties for toppings and size"
 Code: const myPizzaSmall = new Pizza(["beyond meat sausage", "bell pepper", "chili flakes", "red onion"], "vegan cheese", "tomato", "small");
-Expected Output: Pizza { toppings: [""beyond meat sausage", "bell pepper", "chili flakes", "red onion"], cheese: "vegan cheese", sauce: "tomato", size: "small" }
+Expected Output: Pizza { toppings: [""beyond meat sausage", "bell pepper", "chili flakes", "red onion"], cheese: "vegan cheese", sauce: "tomato", size: "small", cost "12"}
 
 Describe: Pizza.prototype.pizzaOrder()
 
