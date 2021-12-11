@@ -16,6 +16,33 @@
 
       <div class="pizza">
         <p>Pizza time</p>
+        <form id="pizza-form">
+
+          <div class="form-group">
+            <label for="pizza-size">Pizza size</label>
+            <select class="mdb-select md-form" multiple="multiple" id="pizza-slice">
+              <option value="Small">Small</option>
+              <option value="Medium">Medium</option>
+              <option value="Large">Large</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="pizza-toppings">Pizza toppings</label>
+            <select class="select" multiple id="pizza-toppings">
+              <option value="garlic">garlic</option>
+              <option value="broccoli">broccoli</option>
+              <option value="bell pepper">bell pepper</option>
+              <option value="olives">olives</option>
+              <option value="Beyond Meat Italian sausage">Beyond Meat Italian sausage</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" type="submit">Order my pizza</button>
+        </form>
+      </div>
+      
+      <div class="order">
+        <p>Pizza Order</p>
       </div>
 
   </div>
