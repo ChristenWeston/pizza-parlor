@@ -34,3 +34,5 @@ Pizza.prototype.pizzaOrder = function() {
   this.cost += toppingsCost;
   return this.cost;
 }
+
+//User Interface Logic
