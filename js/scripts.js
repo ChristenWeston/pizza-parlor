@@ -5,36 +5,33 @@ function Pizza(toppings, cheese, sauce, size) {
   this.sauce = sauce;
   this.size = size;
   //toppingsNumber = this.numberOfToppings();
+  cost = this.pizzaOrder();
 }
-/*
-Pizza.prototype.numberOfToppings = function() {
-  this.toppingsNumber = parseInt(this.toppings.length);
-  return this.toppingsNumber;
-}*/
 
-Pizza.prototype.pizzaOrder = function(pizza) {
-  let cost = 0.00;
+
+Pizza.prototype.pizzaOrder = function() {
+  this.cost = 0.00;
   let numberOfToppings = 0;
   let toppingsCost = 0.00;
   
-  if (pizza.size === "small") {
-    cost += 7.00;
+  if (this.size === "small") {
+    this.cost += 7.00;
   }
-  else if (pizza.size === "medium") {
-    cost += 10.00;
+  else if (this.size === "medium") {
+    this.cost += 10.00;
   }
-  else if (pizza.size === "large") {
-    cost += 13.00;
+  else if (this.size === "large") {
+    this.cost += 13.00;
   }
   else {
     console.log("No pizza size!");
   }
 
-  numberOfToppings += parseInt(pizza.toppings.length);
+  numberOfToppings += parseInt(this.toppings.length);
   console.log(numberOfToppings);
   toppingsCost += numberOfToppings * 1.25;
   console.log(toppingsCost);
 
-  cost += toppingsCost;
-  return cost;
+  this.cost += toppingsCost;
+  return this.cost;
 }
