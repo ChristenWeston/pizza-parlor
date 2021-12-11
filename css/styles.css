@@ -22,9 +22,8 @@ body {
 }
 .btn-start-order{
   justify-content: center;
-  height: 60px;
+  height: 70px;
   margin-top: 10%;
-  margin-left: 7%;
   font-size: larger;
   color: rgb(255, 255, 255);
   text-transform: capitalize;
@@ -33,3 +32,23 @@ body {
   border: 3px solid rgb(255, 255, 255); 
   transition-duration: 0.4s;
 }
+
+.btn-start-order:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.808)
+}
+
+#pizza{
+  display: none;
+  font-size: 30px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border-radius: 0.25rem;
+  margin: 4px;
+  padding: 2px;
+  border: 2px solid rgba(0, 0, 0, 0.125);
+  height: 450px;
+  }
