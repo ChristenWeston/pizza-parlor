@@ -48,6 +48,15 @@ $(document).ready(function() {
 $(document).ready(function() {
   $("form#pizza-form").submit(function(event) {
     event.preventDefault();
+    //toppings, cheese, sauce, size
+    let size = $("select#pizza-size").val();
+    console.log("Pizza size " + size);
+    let cheese = $("select#cheese").val();
+    console.log("Pizza cheese " + cheese);
+    let sauce = $("select#sauce").val();
+    console.log("Pizza sauce " + sauce);
+    let toppings = $("select#toppings").val();
+    console.log("Pizza toppings " + toppings);
     $(".pizza").hide();
     $(".order").show();
 
