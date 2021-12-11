@@ -8,7 +8,6 @@ function Pizza(toppings, cheese, sauce, size) {
   cost = this.pizzaOrder();
 }
 
-
 Pizza.prototype.pizzaOrder = function() {
   this.cost = 0.00;
   let numberOfToppings = 0;
