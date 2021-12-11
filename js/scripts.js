@@ -36,3 +36,12 @@ Pizza.prototype.pizzaOrder = function() {
 }
 
 //User Interface Logic
+
+$(document).ready(function() {
+  $(".btn-start-order").click(function(event) {
+    event.preventDefault();
+    $(".pizza").show();
+    $("#start-order").hide();
+
+  })
+})
