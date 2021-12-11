@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap');
+
+body {
+  background-image: url("../img/pizzaBackground.jpeg");
+  background-size: cover;
+}
+
+.welcome {
+  color: white;
+  font-size: 50px;
+}
