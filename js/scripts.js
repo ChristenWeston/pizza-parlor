@@ -57,6 +57,10 @@ $(document).ready(function() {
     console.log("Pizza sauce " + sauce);
     let toppings = $("select#toppings").val();
     console.log("Pizza toppings " + toppings);
+
+    let myPizza = new Pizza(toppings, cheese, sauce, size);
+    console.log("Here's my pizza " + myPizza);
+
     $(".pizza").hide();
     $(".order").show();
 
