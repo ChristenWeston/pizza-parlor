@@ -60,6 +60,7 @@ $(document).ready(function() {
     console.log("Pizza toppings " + toppings);
 
     let myPizza = new Pizza(toppings, cheese, sauce, size);
+    $(".pizza-cost").html(myPizza.cost);
     
     $(".pizza").hide();
     $(".order").show();
