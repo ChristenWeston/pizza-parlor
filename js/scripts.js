@@ -28,16 +28,12 @@ Pizza.prototype.pizzaOrder = function() {
   }
 
   numberOfToppings += parseInt(this.toppings.length);
-  console.log(numberOfToppings);
   toppingsCost += numberOfToppings * 1.25;
-  console.log(toppingsCost);
-
   this.cost += toppingsCost;
   return this.cost;
 }
 
 //User Interface Logic
-
 $(document).ready(function() {
   $(".btn-start-order").click(function(event) {
     event.preventDefault();
@@ -49,7 +45,6 @@ $(document).ready(function() {
 $(document).ready(function() {
   $("form#pizza-form").submit(function(event) {
     event.preventDefault();
-    //toppings, cheese, sauce, size
     let size = $("select#pizza-size").val();
     console.log("Pizza size " + size);
     let cheese = $("select#cheese").val();
@@ -61,7 +56,10 @@ $(document).ready(function() {
 
     let myPizza = new Pizza(toppings, cheese, sauce, size);
     $(".pizza-cost").html(myPizza.cost);
-    
+    $(".pizza-size").html(myPizza.size);
+    $(".pizza-toppings").html(myPizza.toppings);
+    $(".pizza-cheese").html(myPizza.cheese);
+
     $(".pizza").hide();
     $(".order").show();
 
