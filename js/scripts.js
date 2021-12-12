@@ -6,6 +6,7 @@ function Pizza(toppings, cheese, sauce, size) {
   this.size = size;
   //toppingsNumber = this.numberOfToppings();
   cost = this.pizzaOrder();
+  console.log(this);
 }
 
 Pizza.prototype.pizzaOrder = function() {
@@ -59,8 +60,7 @@ $(document).ready(function() {
     console.log("Pizza toppings " + toppings);
 
     let myPizza = new Pizza(toppings, cheese, sauce, size);
-    console.log("Here's my pizza " + myPizza);
-
+    
     $(".pizza").hide();
     $(".order").show();
 
