@@ -67,7 +67,7 @@ $(document).ready(function() {
     $(".pizza-size").html(myPizza.size);
     $(".pizza-toppings").html(myPizzaToppings);
     $(".pizza-cheese").html(myPizza.cheese);
-    
+    $(".pizza-sauce").html(myPizza.sauce);
     $(".pizza").hide();
     $(".order").show();
   })
