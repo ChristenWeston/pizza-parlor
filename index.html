@@ -9,15 +9,14 @@
 </head>
 <body>
   <div class="welcome">
-    <h3>Welcome to the Pizza Parlor!</h3>
+    <h3>Olive the cat's Pizza Parlor!</h3>
       <div id="start-order">
         <button type="submit" class="btn-start-order">Start Order</button>
       </div>
 
       <div class="pizza">
-        <p>Pizza time</p>
+        <p id="create-here">My Pizza</p>
         <form id="pizza-form">
-
           <div class="form-group">
             <label for="pizza-size">Pizza size</label>
             <select class="form-control" id="pizza-size">
@@ -26,7 +25,6 @@
               <option value="large">Large</option>
             </select>
           </div>
-
           <div class="form-group">
             <label for="pizza-toppings">Pizza toppings</label>
             <select class="form-control" multiple="multiple" id="toppings">
@@ -37,7 +35,6 @@
               <option value="Beyond Meat Italian sausage">Beyond Meat Italian sausage</option>
             </select>
           </div>
-
           <div class="form-group">
             <label>Pizza cheese (Follow your heart)</label>
             <select class="form-control" id="cheese">
@@ -46,7 +43,6 @@
               <option value="feta">feta</option>
             </select>
             </div>
-
             <div class="form-group">
               <label>Pizza sauce</label>
               <select class="form-control" id="sauce">
@@ -55,11 +51,9 @@
                 <option value="mystery">mystery sauce</option>
               </select>
               </div>
-
-          <button class="btn btn-primary" type="submit">Order my pizza</button>
+          <button class="btn-primary" type="submit">Order my pizza</button>
         </form>
       </div>
-      
       <div class="order">
         <h3>Here's your pizza order:</h3>
         <p>Cost: $<span class="pizza-cost"></span></p>
@@ -67,7 +61,6 @@
         <p>Toppings: <span class="pizza-toppings"></span></p>
         <p>Cheese: <span class="pizza-cheese"></span></p>
       </div>
-
   </div>
 </div>
 
