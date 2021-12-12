@@ -22,7 +22,7 @@ Pizza.prototype.pizzaOrder = function() {
     this.cost += 13.00;
   }
   else {
-    console.log("No pizza size!");
+    this.cost +=0.00;
   }
 
   numberOfToppings += parseInt(this.toppings.length);
