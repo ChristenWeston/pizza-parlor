@@ -34,6 +34,15 @@ Pizza.prototype.pizzaOrder = function() {
 }
 
 //User Interface Logic
+function displayPizzaToppings(pizza) {
+  let newToppingsList = pizza.toppings[0];
+
+  for (let i = 1; i<pizza.toppings.length; i++) {
+    newToppingsList += " + " + pizza.toppings[i];
+  }
+  return newToppingsList;
+}
+
 $(document).ready(function() {
   $(".btn-start-order").click(function(event) {
     event.preventDefault();
@@ -46,23 +55,21 @@ $(document).ready(function() {
   $("form#pizza-form").submit(function(event) {
     event.preventDefault();
     let size = $("select#pizza-size").val();
-    console.log("Pizza size " + size);
     let cheese = $("select#cheese").val();
-    console.log("Pizza cheese " + cheese);
     let sauce = $("select#sauce").val();
     console.log("Pizza sauce " + sauce);
     let toppings = $("select#toppings").val();
     console.log("Pizza toppings " + toppings);
 
     let myPizza = new Pizza(toppings, cheese, sauce, size);
+    let myPizzaToppings = displayPizzaToppings(myPizza);
     $(".pizza-cost").html(myPizza.cost);
     $(".pizza-size").html(myPizza.size);
-    $(".pizza-toppings").html(myPizza.toppings);
+    $(".pizza-toppings").html(myPizzaToppings);
     $(".pizza-cheese").html(myPizza.cheese);
-
+    
     $(".pizza").hide();
     $(".order").show();
-
   })
 })
 
