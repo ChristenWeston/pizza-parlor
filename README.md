@@ -1,3 +1,35 @@
+# Pizza Parlor
+
+#### Created by Christen Weston
+
+#### This page allows you to create the pizza of your dreams!
+
+[GitHub pages site](https://christenweston.github.io/pizza-parlor/)
+
+## Technologies Used
+
+* Git
+* HTML
+* CSS
+* JQuery
+
+## Setup Installation Requirements
+
+1. Clone the Portfolio repository
+2. Open the index file in your browser
+3. Enjoy!
+
+# Known Bugs
+* None known
+
+## Date Published
+December 2021
+
+## License Info
+[MIT License](https://opensource.org/licenses/MIT)
+
+## Specifications
+
 Describe: Pizza()
 
 Test: "It should return a Pizza object with two properties for toppings and size"
