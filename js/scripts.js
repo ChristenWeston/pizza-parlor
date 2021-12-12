@@ -4,9 +4,7 @@ function Pizza(toppings, cheese, sauce, size) {
   this.cheese = cheese;
   this.sauce = sauce;
   this.size = size;
-  //toppingsNumber = this.numberOfToppings();
   cost = this.pizzaOrder();
-  console.log(this);
 }
 
 Pizza.prototype.pizzaOrder = function() {
@@ -57,9 +55,7 @@ $(document).ready(function() {
     let size = $("select#pizza-size").val();
     let cheese = $("select#cheese").val();
     let sauce = $("select#sauce").val();
-    console.log("Pizza sauce " + sauce);
     let toppings = $("select#toppings").val();
-    console.log("Pizza toppings " + toppings);
 
     let myPizza = new Pizza(toppings, cheese, sauce, size);
     let myPizzaToppings = displayPizzaToppings(myPizza);
